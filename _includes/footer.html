@@ -1,0 +1,22 @@
+<footer class="footer">
+   <div class="footer__container">
+      <p class="footer__copy">&copy; {{ site.time | date: '%Y' }} <a href="http://brianmaierjr.com">Brian Maier Jr.</a> Powered by <a href="http://jekyllrb.com">Jekyll</a></p>
+
+      <div class="footerLinks">
+         <ul class="noList">
+            {% if site.social.facebook %}
+            <li class="footerLinks__link"><a href="https://www.facebook.com/{{ site.social.facebook }}">Facebook</a></li>
+            {% endif %}
+            {% if site.social.twitter %}
+            <li class="footerLinks__link"><a href="https://twitter.com/{{ site.social.twitter }}">Twitter</a></li>
+            {% endif %}
+            {% if site.social.github %}
+            <li class="footerLinks__link"><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>
+            {% endif %}
+            {% if site.social.email %}
+            <li class="footerLinks__link"><a href="mailto:{{ site.social.email }}">Email</a></li>
+            {% endif %}
+         </ul>
+      </div>
+   </div>
+</footer><!-- end .footer -->
