@@ -10,29 +10,63 @@ html {
 }
 
 body {
-	font-family: $serif;
+	font-family: $body;
+  text-transform: uppercase;
 	line-height: 1.75;
 	font-size: 112.5%; // 18px base font size
-	color: black;
+	color: white;
+  background-image: url(/assets/img/bg-main.jpg);
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  background-size: cover;
 	overflow-x: hidden;
   margin: 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  position: relative;
 
 	p , ul {
 		margin: 0 0 2rem;
 	}
 }
 
+.bg {
+  background-image: url(/assets/img/bg-overlay.png);
+  background-position: center;
+  mix-blend-mode: overlay;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  z-index: 1;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
 // Text Selection Styling
 ::-moz-selection {
-	background: $primary-color;
+	background: $orange;
 	color: white;
 }
 
 ::selection {
-	background: $primary-color;
+	background: $orange;
 	color: white;
+}
+
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: map-get($wraps, wrap);
 }
 
 /***************

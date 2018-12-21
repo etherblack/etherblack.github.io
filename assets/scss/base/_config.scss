@@ -1,9 +1,11 @@
 /***************
 COLOR VARIABLES
 ***************/
-$primary-color: seagreen;
-$link-color: red;
-$background-color: lightgray; 
+$green: #96FF94;
+$teal: #15A89F;
+$orange: #FF903F;
+$link-color: $orange;
+
 
 /***************
 CONSISTENT SETTINGS
@@ -17,9 +19,20 @@ $line-height: 44px; // Consistent height for buttons, inputs etc.
 /***************
 TYPE SETTINGS
 ***************/
-$sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
-$serif: "PT Serif", Georgia, Times, serif;
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400i,500|Montserrat:900i');
+
+@font-face {
+  font-family: 'ds-digitalnormal';
+  src: url('/assets/fonts/ds-digi-webfont.woff2') format('woff2'),
+       url('/assets/fonts/ds-digi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$heading: 'Montserrat', sans-serif;
+$body: 'Barlow Condensed', sans-serif;
+$digital: 'ds-digitalnormal', sans-serif;
 
 /***************
 SIZES
@@ -35,6 +48,17 @@ $breakpoints: (
 	md: 768px,
 	lg: 1040px,
 	wrap: 1440px
+);
+
+/***************
+WRAPS
+***************/
+
+$wraps: (
+	sm: 400px,
+	md: 700px,
+	lg: 960px,
+	wrap: 1200px
 );
 
 /***************

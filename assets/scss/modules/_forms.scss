@@ -16,7 +16,7 @@ input[type=text],input[type=email],input[type=phone],input[type=password],input[
 	margin-bottom: .5rem;
 
 	&:focus {
-		border: 1px solid $primary-color;
+		border: 1px solid $green;
 	}
 
 	&.full-width {

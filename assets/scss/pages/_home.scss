@@ -1,0 +1,34 @@
+.homeTitle,
+.homeSubTitle {
+  text-align: center;
+  span {
+    display: block;
+  }
+}
+
+.homeTitle {
+  &__lineOne,
+  &__lineTwo {
+    font-size: 8vw;
+  }
+  &__lineThree {
+    font-size: 7.5vw;
+  }
+  &__lineFour {
+    font-size: 13vw;
+  }
+}
+
+.homeSubTitle {
+  &__lineOne {
+    font-size: 13.5vw;
+  }
+  &__lineTwo {
+    font-size: 7.5vw;
+  }
+}
+
+.specimenSlider {
+  background-color: black;
+  min-height: rem(500);
+}

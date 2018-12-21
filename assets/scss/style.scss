@@ -10,11 +10,12 @@
 @import "modules/forms";
 @import "modules/tables";
 @import "modules/syntax";
-@import "modules/links"; 
+@import "modules/links";
 @import "modules/lists";
 
 // Import Partials
 @import "partials/header";
 @import "partials/footer";
 
-// Mobile up base styles
+// Import Pages
+@import "pages/home";

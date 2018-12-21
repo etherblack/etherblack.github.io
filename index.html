@@ -1,26 +1,31 @@
 ---
 layout: default
-title: Frameset
+title: EtherBlack Industries
 ---
 
 <div class="home" id="home">
-  <h1 class="pageTitle">Recent Posts</h1>
-  <ul class="posts noList">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
-      </li>
+
+  <h1 class="homeTitle wrap">
+    <span class="homeTitle__lineOne">A rogue group of</span>
+    <span class="homeTitle__lineTwo">creators serving</span>
+    <span class="homeTitle__lineThree">capitalism for the</span>
+    <span class="homeTitle__lineFour">digital age</span>
+  </h1>
+
+  <div class="specimenSlider">
+    <h2 class="specimenSlider__heading">Case Speciments</h2>
+    {% for specimen in site.specimen %}
+      {% if specimen.featured %}
+      <a class="workItem" href="{{ specimen.url }}">
+        {{ specimen.title }}
+      </a>
+      {% endif %}
     {% endfor %}
-  </ul>
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a>
-    {% endif %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
-    {% endif %}
   </div>
+
+  <h2 class="homeSubTitle wrap">
+    <span class="homeSubTitle__lineOne">Masons of</span>
+    <span class="homeSubTitle__lineTwo">form and thought</span>
+  </h2>
+
 </div>

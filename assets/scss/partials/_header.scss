@@ -1,0 +1,49 @@
+header {
+  text-align: center;
+  padding-top: rem(20);
+}
+
+.headerNav {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: rem(40);
+    width: 100%;
+    background-image: url(/assets/img/bg-overlay.png);
+    background-color: $orange;
+    background-blend-mode: overlay;
+    z-index: -1;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    display: inline;
+
+    a {
+      text-decoration: none;
+      padding-left: rem(20);
+      padding-bottom: rem(20);
+      font-family: $heading;
+      color: black;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &--home {
+      padding-left: rem(30);
+      padding-right: rem(30);
+    }
+  }
+}

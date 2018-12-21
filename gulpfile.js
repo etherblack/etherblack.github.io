@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var cssnano 		= require('gulp-cssnano');
+var gutil 		= require('gulp-util');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -46,6 +47,7 @@ gulp.task('sass', function () {
             includePaths: ['scss'],
             onError: browserSync.notify
         }))
+        .on('error', gutil.log)
         .pipe(prefix(['last 3 versions'], { cascade: true }))
 				.pipe(cssnano())
         .pipe(gulp.dest('_site/assets/css'))

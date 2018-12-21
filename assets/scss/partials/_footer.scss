@@ -1,0 +1,23 @@
+.footer {
+  background-color: black;
+  padding-top: rem(30);
+
+  &__copy {
+    font-family: $digital;
+    color: $orange;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Nav {
+    &__link {
+      display: inline;
+      margin-right: rem(5);
+      margin-left: rem(5);
+    }
+  }
+}
