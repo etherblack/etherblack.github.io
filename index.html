@@ -4,28 +4,34 @@ title: EtherBlack Industries
 ---
 
 <div class="home" id="home">
-
   <h1 class="homeTitle wrap">
-    <span class="homeTitle__lineOne">A rogue group of</span>
-    <span class="homeTitle__lineTwo">creators serving</span>
-    <span class="homeTitle__lineThree">capitalism for the</span>
-    <span class="homeTitle__lineFour">digital age</span>
+    <img
+      src="/assets/img/home-heading01.svg"
+      alt="A rogue group of creators serving capitalism for the digital age."
+    />
   </h1>
 
   <div class="specimenSlider">
-    <h2 class="specimenSlider__heading">Case Speciments</h2>
-    {% for specimen in site.specimen %}
-      {% if specimen.featured %}
-      <a class="workItem" href="{{ specimen.url }}">
-        {{ specimen.title }}
-      </a>
-      {% endif %}
-    {% endfor %}
+    <h2 class="specimenSlider__heading">Case Specimens</h2>
+    {% for specimen in site.specimen %} {% if specimen.featured %}
+    <a class="workItem" href="{{ specimen.url }}">
+      <img
+        src="/assets/img/{{ specimen.featured-image }}"
+        alt="{{ specimen.title }}"
+      />
+      <span class="workItem__details">
+        <h3 class="workItem__heading">{{ specimen.title }}</h3>
+        {% for tag in specimen.tags %}
+        <span class="workItem__tag">{{ tag }}</span> {% endfor %}
+      </span>
+    </a>
+    {% endif %} {% endfor %}
   </div>
 
   <h2 class="homeSubTitle wrap">
-    <span class="homeSubTitle__lineOne">Masons of</span>
-    <span class="homeSubTitle__lineTwo">form and thought</span>
+    <img
+      src="/assets/img/home-heading02.svg"
+      alt="Masons of form and thought."
+    />
   </h2>
-
 </div>
