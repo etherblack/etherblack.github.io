@@ -35,14 +35,13 @@ body {
     display: block;
     background-image: url(/assets/img/bg-overlay.png);
     background-position: fixed;
-    background-blend-mode: multiply;
     background-color: #4392c1;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    opacity: 0.5;
+    opacity: 0.2;
   }
 
   p,

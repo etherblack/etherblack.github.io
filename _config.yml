@@ -12,20 +12,20 @@ gems: [jekyll-paginate]
 paginate: 5
 
 navigation--left:
- - title: About
-   url: /about
- - title: Services
-   url: /services
- - title: Feed
-   url: /feed
+  - title: About
+    url: /about
+  - title: Services
+    url: /services
+  # - title: Feed
+  #   url: /feed
 
 navigation--right:
- - title: Work
-   url: /work
- - title: Hire
-   url: /Hire
- - title: Store
-   url: /store
+  # - title: Work
+  #   url: /work
+  - title: Hire
+    url: /Hire
+  - title: Store
+    url: /store
 
 collections:
   specimen:
@@ -33,14 +33,14 @@ collections:
     permalink: /specimen/:path/
 
 social:
- - icon: icon-facebook
-   url: https://facebook.com/etherblk
-   alt: EtherBlk on Facebook
- - icon: icon-twitter
-   url: https://twitter.com/etherblk
-   alt: EtherBlk on Twitter
- - icon: icon-instagram
-   url: https://instagram.com/etherblk
-   alt: EtherBlk on Instagram
+  - icon: icon-facebook
+    url: https://facebook.com/etherblk
+    alt: EtherBlk on Facebook
+  - icon: icon-twitter
+    url: https://twitter.com/etherblk
+    alt: EtherBlk on Twitter
+  - icon: icon-instagram
+    url: https://instagram.com/etherblk
+    alt: EtherBlk on Instagram
 
 google_analytics: "UA-58263416-1"

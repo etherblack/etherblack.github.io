@@ -16,7 +16,18 @@
 
   img {
     opacity: 0.7;
+    position: absolute;
+    left: 5%;
+    width: 90%;
   }
+}
+
+.homeTitle.wrap {
+  min-height: 35vw;
+}
+
+.homeSubTitle.wrap {
+  min-height: 21vw;
 }
 
 .specimenSlider {

@@ -14,7 +14,7 @@ header {
     transform: translateY(-50%);
     height: rem(40);
     width: 100%;
-    background-image: url(/assets/img/bg-overlay.png);
+    // background-image: url(/assets/img/bg-overlay.png);
     background-color: $orange;
     background-blend-mode: overlay;
     z-index: -1;
@@ -37,6 +37,7 @@ header {
       font-family: $heading;
       font-weight: 900;
       color: black;
+      display: inline;
 
       &:hover {
         color: white;
