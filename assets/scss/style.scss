@@ -4,6 +4,7 @@
 @import "base/mixins";
 @import "base/typography";
 @import "base/global";
+@import "base/layout";
 
 // Modules
 @import "modules/buttons";
@@ -19,4 +20,5 @@
 @import "partials/footer";
 
 // Import Pages
+@import "pages/about";
 @import "pages/home";

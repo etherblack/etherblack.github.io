@@ -14,7 +14,7 @@ header {
     transform: translateY(-50%);
     height: rem(40);
     width: 100%;
-    // background-image: url(/assets/img/bg-overlay.png);
+    background-image: url(/assets/img/bg-overlay.png);
     background-color: $orange;
     background-blend-mode: overlay;
     z-index: -1;
@@ -32,21 +32,45 @@ header {
 
     a {
       text-decoration: none;
-      padding-left: rem(20);
-      padding-bottom: rem(20);
+      padding-left: rem(8);
       font-family: $heading;
       font-weight: 900;
       color: black;
       display: inline;
+      font-size: rem(12);
+
+      @include min(md) {
+        padding-left: rem(40);
+        font-size: 1em;
+      }
 
       &:hover {
-        color: white;
+        text-decoration: underline;
       }
     }
 
     &--home {
-      padding-left: rem(30);
-      padding-right: rem(30);
+      padding-left: rem(8);
+      padding-right: rem(8);
+
+      @include min(md) {
+        padding-left: rem(30);
+        padding-right: rem(30);
+      }
+
+      a {
+        display: inline-block;
+        padding: 0;
+      }
+
+      img {
+        width: rem(60);
+        vertical-align: middle;
+
+        @include min(md) {
+          width: auto;
+        }
+      }
     }
   }
 }

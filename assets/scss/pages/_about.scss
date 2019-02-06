@@ -1,0 +1,86 @@
+#about {
+  .content {
+    @include min(md) {
+      padding-bottom: 16rem;
+      margin-bottom: 18rem;
+    }
+  }
+}
+
+.aboutContent {
+  @include min(md) {
+    display: flex;
+  }
+
+  &__left {
+    @include min(md) {
+      flex: 0 1 70%;
+    }
+
+    p {
+      color: $teal;
+      font-style: italic;
+      font-size: rem(30);
+      line-height: 1.2;
+    }
+  }
+}
+
+.aboutClients {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(100);
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+
+  img {
+    padding: rem(10) rem(20);
+  }
+}
+
+.team {
+  text-align: center;
+
+  @include min(md) {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+.teamMember { 
+
+  @include min(md) {
+    flex: 1;
+    padding-left: rem(10);
+    padding-right: rem(10);
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__name {
+    font-family: $digital;
+  }
+
+  &__title {
+    font-family: $digital;
+    color: black;
+    background-color: $orange;
+    mix-blend-mode: hard-light;
+    display: inline-block;
+    padding-left: rem(10);
+    padding-right: rem(10);
+    margin: 0;
+    position: relative;
+    top: rem(10);
+    line-height: 1.2;
+  }
+}
