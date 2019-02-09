@@ -39,6 +39,7 @@ header {
       display: inline;
       font-size: rem(12);
       font-style: italic;
+      letter-spacing: rem(2);
 
       @include min(md) {
         padding-left: rem(40);

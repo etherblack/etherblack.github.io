@@ -23,7 +23,7 @@ navigation--right:
   # - title: Work
   #   url: /work
   - title: Store
-    url: /store
+    url: https://etherblack.bigcartel.com/
 
 collections:
   specimen:
