@@ -1,5 +1,5 @@
-title: Etherblack Industries
-description: Masons of form and thought
+title: ETHERBLACK INDUSTRIES
+description: MASONS OF FORM AND THOUGHT
 
 # url: http://etherblk.com
 # baseurl: "/frameset"
@@ -23,7 +23,7 @@ navigation--right:
   # - title: Work
   #   url: /work
   - title: Store
-    url: /store
+    url: https://etherblack.bigcartel.com/
 
 collections:
   specimen:

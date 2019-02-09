@@ -41,6 +41,11 @@ input[type="submit"] {
   font-size: 1.5em;
   padding: rem(5) rem(30);
   border-radius: rem(20);
+
+  &:hover {
+    background-color: $green;
+    cursor: pointer;
+  }
 }
 
 textarea {
