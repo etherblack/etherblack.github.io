@@ -38,6 +38,7 @@ header {
       color: black;
       display: inline;
       font-size: rem(12);
+      font-style: italic;
 
       @include min(md) {
         padding-left: rem(40);
