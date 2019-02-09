@@ -48,6 +48,13 @@ body {
   ul {
     margin: 0 0 2rem;
   }
+
+  p {
+    color: $teal;
+    font-style: italic;
+    font-size: rem(30);
+    line-height: 1.2;
+  }
 }
 
 header,

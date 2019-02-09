@@ -14,19 +14,41 @@ title: EtherBlack Industries
 
   <div class="specimenSlider">
     <h2 class="specimenSlider__heading">Case Specimens</h2>
-    {% for specimen in site.specimen %} {% if specimen.featured %}
-    <a class="workItem" href="{{ specimen.url }}">
-      <img
-        src="/assets/img/{{ specimen.featured-image }}"
-        alt="{{ specimen.title }}"
-      />
-      <span class="workItem__details">
-        <h3 class="workItem__heading">{{ specimen.title }}</h3>
-        {% for tag in specimen.tags %}
-        <span class="workItem__tag">{{ tag }}</span> {% endfor %}
-      </span>
-    </a>
-    {% endif %} {% endfor %}
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          {% for specimen in site.specimen %} {% if specimen.featured %}
+          <li class="slide__slide">
+            <div class="workItem" href="{{ specimen.url }}">
+              <img
+                src="/assets/img/{{ specimen.featured-image }}"
+                alt="{{ specimen.title }}"
+              />
+              <span class="workItem__details">
+                <h3 class="workItem__heading">{{ specimen.title }}</h3>
+                {% for tag in specimen.tags %}
+                <span class="workItem__tag">{{ tag }}</span> {% endfor %}
+              </span>
+            </div>
+          </li>
+          {% endif %} {% endfor %}
+        </ul>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img
+              src="{{ site.url }}/assets/img/arrows-left.svg"
+              alt="Previous Specimen"
+            />
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img
+              src="{{ site.url }}/assets/img/arrows-right.svg"
+              alt="Next Specimen"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <h2 class="homeSubTitle wrap">

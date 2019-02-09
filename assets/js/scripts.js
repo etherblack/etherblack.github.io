@@ -14,4 +14,13 @@ $(document).ready(function() {
       zIndexStart: 8 // because of absolute position, set z-index base value
     });
   });
+
+  // Modal
+  $(".modalTrigger, .modalClose").click(function(e) {
+    e.preventDefault();
+    $(".modal").toggleClass("show");
+  });
+
+  // GlideJs
+  new Glide(".glide").mount();
 });

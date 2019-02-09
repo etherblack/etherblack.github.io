@@ -22,8 +22,6 @@ navigation--left:
 navigation--right:
   # - title: Work
   #   url: /work
-  - title: Hire
-    url: /Hire
   - title: Store
     url: /store
 

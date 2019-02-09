@@ -12,9 +12,12 @@
         </li>
         {% endfor %}
         <li class="headerNav__link headerNav__link--home">
-          <a href="/index.html" 
+          <a href="/index.html"
             ><img src="/assets/img/logo.svg" alt="EtherBlk Home Page"
           /></a>
+        </li>
+        <li class="headerNav__link">
+          <a href="#" class="modalTrigger">Hire</a>
         </li>
         {% for link in site.navigation--right %}{% assign current = nil %}{% if
         page.url contains link.url or forloop.first and page.url == '/' or

@@ -7,6 +7,11 @@
   }
 }
 
+.aboutWrap {
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
 .aboutContent {
   @include min(md) {
     display: flex;
@@ -15,14 +20,43 @@
   &__left {
     @include min(md) {
       flex: 0 1 70%;
+      padding-right: rem(100);
+    }
+  }
+
+  &__right {
+    @include min(md) {
+      flex: 0 1 30%;
     }
 
-    p {
-      color: $teal;
-      font-style: italic;
-      font-size: rem(30);
-      line-height: 1.2;
+    h3 {
+      text-align: center;
+      background-color: $orange;
+      color: black;
+      border-radius: rem(40) rem(40) 0 0;
+      padding: rem(10) 0;
+      margin-bottom: 0;
     }
+  }
+
+  form {
+    padding: rem(40);
+    border: 1px solid $orange;
+    border-radius: 0 0 rem(40) rem(40);
+
+    input {
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      width: auto;
+    }
+  }
+
+  .formSubmit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: rem(20);
   }
 }
 
@@ -46,14 +80,21 @@
 
   @include min(md) {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 100%;
     transform: translateY(-50%);
+    width: 100%;
+    max-width: map-get($wraps, wrap);
+  }
+
+  @include min(wrap) {
+    left: calc((100% - 1440px) / 2);
   }
 }
 
-.teamMember { 
-
+.teamMember {
   @include min(md) {
     flex: 1;
     padding-left: rem(10);
@@ -82,5 +123,6 @@
     position: relative;
     top: rem(10);
     line-height: 1.2;
+    font-size: rem(18);
   }
 }

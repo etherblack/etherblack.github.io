@@ -45,7 +45,7 @@ header {
       }
 
       &:hover {
-        text-decoration: underline;
+        color: darken($orange, 20%);
       }
     }
 
