@@ -55,7 +55,9 @@
   }
 
   &Close {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 10px;
     left: calc(50% - 14px);
@@ -64,6 +66,8 @@
     color: $orange;
     font-size: rem(30);
     line-height: rem(25);
+    height: rem(35);
+    width: rem(35);
 
     @include min(md) {
       top: -14px;
