@@ -1,5 +1,1 @@
-<svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="4.2" height="32" transform="matrix(1 0 0 -1 0 32)" fill="#FF903F"/>
-<rect width="12.6" height="32" transform="matrix(1 0 0 -1 9.79999 32)" fill="#FF903F"/>
-<rect width="4.2" height="12" transform="matrix(1 0 0 -1 37.8 32)" fill="#FF903F"/>
-</svg>
+<svg fill="none" height="32" viewBox="0 0 42 32" width="42" xmlns="http://www.w3.org/2000/svg"><g fill="#ff903f"><path d="m0 0h4.2v32h-4.2z" transform="matrix(1 0 0 -1 0 32)"/><path d="m0 0h12.6v32h-12.6z" transform="matrix(1 0 0 -1 9.79999 32)"/><path d="m0 0h4.2v12h-4.2z" transform="matrix(1 0 0 -1 37.8 32)"/></g></svg>
