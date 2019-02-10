@@ -73,6 +73,7 @@
       width: 100%;
       display: block;
       text-align: center;
+      white-space: normal;
 
       @include min(md) {
         position: absolute;
