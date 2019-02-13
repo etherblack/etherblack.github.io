@@ -1,0 +1,53 @@
+.mobileNav {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  visibility: hidden;
+  transform: scale(2);
+  opacity: 0;
+  transition: all 0.3s;
+
+  @include min(md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: rem(45);
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &.show {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .menuTrigger {
+    position: absolute;
+    top: rem(15);
+    right: rem(15);
+    font-size: rem(25);
+    text-decoration: none;
+    color: $green;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

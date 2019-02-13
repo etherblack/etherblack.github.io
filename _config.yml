@@ -11,20 +11,6 @@ highlighter: rouge
 gems: [jekyll-paginate]
 paginate: 5
 
-navigation--left:
-  - title: About
-    url: /about
-  - title: Services
-    url: /services
-  # - title: Feed
-  #   url: /feed
-
-navigation--right:
-  # - title: Work
-  #   url: /work
-  - title: Store
-    url: https://etherblack.bigcartel.com/
-
 collections:
   specimen:
     output: true
