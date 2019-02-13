@@ -1,6 +1,8 @@
 header {
   text-align: center;
   padding-top: rem(20);
+  position: relative;
+  z-index: 15;
 }
 
 .headerNav {
@@ -23,12 +25,25 @@ header {
   ul {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: 0;
+    justify-content: space-between;
+
+    @include max(md) {
+      width: 90%;
+      margin-left: 5%;
+    }
+
+    @include min(md) {
+      justify-content: center;
+    }
   }
 
   &__link {
     display: inline;
+
+    @include max(md) {
+      display: none;
+    }
 
     a {
       text-decoration: none;
@@ -54,6 +69,7 @@ header {
     &--home {
       padding-left: rem(8);
       padding-right: rem(8);
+      display: block;
 
       @include min(md) {
         padding-left: rem(30);
@@ -72,6 +88,13 @@ header {
         @include min(md) {
           width: auto;
         }
+      }
+    }
+
+    &--menu {
+      display: block;
+      @include min(md) {
+        display: none;
       }
     }
   }

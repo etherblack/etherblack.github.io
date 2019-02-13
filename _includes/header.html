@@ -2,15 +2,8 @@
   <div class="header__container">
     <nav class="headerNav">
       <ul class="noList">
-        {% for link in site.navigation--left %}{% assign current = nil %}{% if
-        page.url contains link.url or forloop.first and page.url == '/' or
-        page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
-        <li
-          class="headerNav__link {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}"
-        >
-          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-        </li>
-        {% endfor %}
+        <li class="headerNav__link"><a href="/about">About</a></li>
+        <li class="headerNav__link"><a href="/services">Services</a></li>
         <li class="headerNav__link headerNav__link--home">
           <a href="/index.html"
             ><img src="/assets/img/logo.svg" alt="EtherBlk Home Page"
@@ -19,15 +12,33 @@
         <li class="headerNav__link">
           <a href="#" class="modalTrigger">Hire</a>
         </li>
-        {% for link in site.navigation--right %}{% assign current = nil %}{% if
-        page.url contains link.url or forloop.first and page.url == '/' or
-        page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
-        <li
-          class="headerNav__link {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}"
-        >
-          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+        <li class="headerNav__link">
+          <a href="https://etherblack.bigcartel.com/" target="_blank">Store</a>
         </li>
-        {% endfor %}
+        <li class="headerNav__link headerNav__link--menu">
+          <a class="menuTrigger" href="/">Menu</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="mobileNav">
+      <ul class="noList">
+        <li class="mobileNav__link">
+          <a href="/" class="menuTrigger">Close</a>
+        </li>
+        <li class="mobileNav__link mobileNav__link--home">
+          <a href="/index.html"
+            ><img src="/assets/img/logo.svg" alt="EtherBlk Home Page"
+          /></a>
+        </li>
+        <li class="mobileNav__link"><a href="/about">About</a></li>
+        <li class="mobileNav__link"><a href="/services">Services</a></li>
+        <li class="mobileNav__link">
+          <a href="#" class="modalTrigger">Hire</a>
+        </li>
+        <li class="mobileNav__link">
+          <a href="https://etherblack.bigcartel.com/" target="_blank">Store</a>
+        </li>
       </ul>
     </nav>
   </div>

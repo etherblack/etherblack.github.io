@@ -21,6 +21,12 @@ $(document).ready(function() {
     $(".modal").toggleClass("show");
   });
 
+  // NavMenu
+  $(".menuTrigger").click(function(e) {
+    e.preventDefault();
+    $(".mobileNav").toggleClass("show");
+  });
+
   // GlideJs
   new Glide(".glide").mount();
 });
