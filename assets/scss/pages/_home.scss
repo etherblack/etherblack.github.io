@@ -75,7 +75,7 @@
       text-align: center;
       white-space: normal;
 
-      @include min(md) {
+      @include min(lg) {
         position: absolute;
         left: 0;
         width: auto;
@@ -102,6 +102,7 @@
     &__tag {
       color: $teal;
       font-family: $digital;
+      padding-right: 10px;
     }
   }
 }

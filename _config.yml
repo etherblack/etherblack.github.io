@@ -2,7 +2,6 @@ title: ETHERBLACK INDUSTRIES
 description: MASONS OF FORM AND THOUGHT
 
 # url: http://etherblk.com
-# baseurl: "/frameset"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -26,5 +25,3 @@ social:
   - icon: icon-instagram
     url: https://instagram.com/etherblk
     alt: EtherBlk on Instagram
-
-google_analytics: "UA-58263416-1"
