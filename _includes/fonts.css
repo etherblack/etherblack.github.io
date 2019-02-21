@@ -1,0 +1,52 @@
+/* barlow-condensed-regular - latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+       url('{{ site.baseurl }}/assets/fonts/barlow-condensed-v3-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('{{ site.baseurl }}/assets/fonts/barlow-condensed-v3-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* barlow-condensed-italic - latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Barlow Condensed Italic'), local('BarlowCondensed-Italic'),
+       url('{{ site.baseurl }}/assets/fonts/barlow-condensed-v3-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('.{{ site.baseurl }}/assets/fonts/barlow-condensed-v3-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* barlow-condensed-500 - latin */
+@font-face {
+  font-family: 'Barlow Condensed'; 
+  font-style: normal;
+  font-weight: 500;
+  src: local('Barlow Condensed Medium'), local('BarlowCondensed-Medium'),
+       url('{{ site.baseurl }}/assets/fonts/barlow-condensed-v3-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('{{ site.baseurl }}/assets/fonts/barlow-condensed-v3-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'),
+       url('{{ site.baseurl }}/assets/fonts/montserrat-v12-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('{{ site.baseurl }}/assets/fonts/montserrat-v12-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-900italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'),
+       url('{{ site.baseurl }}/assets/fonts/montserrat-v12-latin-900italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('{{ site.baseurl }}/assets/fonts/montserrat-v12-latin-900italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "ds-digitalnormal";
+  src: url("{{ site.baseurl }}/assets/fonts/ds-digi-webfont.woff2") format("woff2"),
+    url("{{ site.baseurl }}/assets/fonts/ds-digi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

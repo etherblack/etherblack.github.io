@@ -16,6 +16,8 @@
   background-color: transparent;
   border: none;
   padding: rem(10);
+  transition: .2s all ease-in-out;
+  transform: translateX(-100%);
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.9);
@@ -25,5 +27,18 @@
   &--right {
     left: inherit;
     right: rem(10);
+    transform: translateX(100%);
+  }
+}
+
+.glide {
+  &:hover {
+    .glide__arrow {
+      transform: none;
+
+      &--right {
+        transform: none;
+      }
+    }
   }
 }

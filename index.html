@@ -1,6 +1,8 @@
 ---
+id: home
 layout: default
 title: ETHERBLACK INDUSTRIES
+permalink: /
 ---
 
 <div class="home" id="home">
@@ -20,10 +22,18 @@ title: ETHERBLACK INDUSTRIES
           {% for specimen in site.specimen %} {% if specimen.featured %}
           <li class="slide__slide">
             <div class="workItem" href="{{ specimen.url }}">
-              <img
-                src="/assets/img/{{ specimen.featured-image }}"
-                alt="{{ specimen.title }}"
-              />
+              <picture>
+                <source
+                  srcset="/assets/img/{{ specimen.featured-image }}.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/assets/img/{{ specimen.featured-image }}.jpg"
+                  type="image/jpeg"
+                />
+                <img src=""/assets/img/{{ specimen.featured-image }}.jpg"
+                alt="{{ specimen.title }}">
+              </picture>
               <span class="workItem__details">
                 <h3 class="workItem__heading">{{ specimen.title }}</h3>
                 {% for tag in specimen.tags %}
