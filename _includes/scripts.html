@@ -26,7 +26,11 @@
 </script>
 <script src="{{ '/assets/js/glide.min.js'  | prepend: site.baseurl }}"></script>
 <script>
-  new Glide(".glide").mount();
+  var glide = new Glide(".glide", {
+    autoplay: 2000
+  });
+
+  glide.mount()
 </script>
 {% endif %}
 <script src="{{ '/assets/js/scripts.js' | prepend: site.baseurl }}"></script>
