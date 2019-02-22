@@ -16,9 +16,6 @@ collections:
     permalink: /specimen/:path/
 
 social:
-  - icon: icon-facebook
-    url: https://facebook.com/etherblack
-    alt: EtherBlk on Facebook
   - icon: icon-twitter
     url: https://twitter.com/etherblk
     alt: EtherBlk on Twitter
